@@ -13,7 +13,7 @@ int main()
     for (int i = 0; i < rows; i++)
         a[i] = (int *)malloc(cols * sizeof(int));
 
-    srand((unsigned int)time(NULL));
+    srand(time(NULL));
     for (int i = 0; i < rows; i++)
         for (int j = 0; j < cols; j++)
             a[i][j] = rand() % 51 - 40;

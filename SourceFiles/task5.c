@@ -56,6 +56,19 @@ int main()
             found = 1;
         }
 
+        if (strcmp(stud[i].name, search) == 0)
+        {
+            printf("founded: %s %s, fakult %s, number %d\n",
+                   stud[i].last_name, stud[i].name, stud[i].facult, stud[i].number);
+            found = 1;
+        }
+
+        if (strcmp(stud[i].facult, search) == 0)
+        {
+            printf("founded: %s %s, fakult %s, number %d\n",
+                   stud[i].last_name, stud[i].name, stud[i].facult, stud[i].number);
+            found = 1;
+        }
     }
 
     if (!found)
